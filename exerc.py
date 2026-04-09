@@ -40,7 +40,7 @@ fab(3)
 #Write a function sum_squares(n) that returns 1^1 + ... + n^n .
 def sum_squre(n):
     summ = 0
-    for i in range(n+1):
+    for i in range(1,n+1):
         result = i**i
         summ += result
         

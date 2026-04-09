@@ -20,3 +20,10 @@ for char in num :
 name = "Ali"
 for letter in name :
     print(letter, end="")
+    
+for i in range (1,10) :
+    print(i)
+    
+name = "shatha"
+for i in range(len(name)):
+    print(name[i])
