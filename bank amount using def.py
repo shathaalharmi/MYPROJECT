@@ -25,22 +25,25 @@ while True :
       print("1.check balance")
       print("2.deposit money")
       print("3.withdraw money")
-      choice = input("Enter option (1, 2, 3): ")
-      if choice == "1":
-             print("Your current amount is:", balance)
+      choice = input("Enter option (1, 2, 3 or q): ")
+      
+      while True:
+          choice = input("Choose option 1, 2, 3, or q to quit: ")
+          if choice == "1":
+                 print("Your current amount is:", balance)
 
-      elif choice == "2":
-            amount = float(input("Enter amount to deposit: "))
-            balance = deposit()
-            print("successfully deposited, you current amount is", balance)
+          elif choice == "2":
+                 amount = float(input("Enter amount to deposit: "))
+                 balance = deposit()
+                 print("successfully deposited, you current amount is", balance)
 
-      elif choice == "3":
-            amount = float(input("Enter amount to withdraw: "))
-            balance = withdraw()
-            print("successfully withdraw, you current amount is:", balance)
+          elif choice == "3":
+                 amount = float(input("Enter amount to withdraw: "))
+                 balance = withdraw()
+                 print("successfully withdraw, you current amount is:", balance)
 
-      else:
-            print("no enough amount")
+          else:
+                 print("no enough amount")
 
 else:
     print("Access denied")
